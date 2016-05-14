@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* GET dance page */
+router.get('/dance', function(req, res, next) {
+  res.render('dance', { title: 'Dance' });
+});
+
 module.exports = router;
