@@ -3,5 +3,13 @@
 
 <h1>Dance</h1>
 
+<!-- Entries -->
+<% for(var i=0; i<entries.length; i++) {%>
+		<!-- Entry Title -->
+		<h1><%= entries[i].title %></h1>
+	   <!-- Description -->
+		<p><%= entries[i].description %></p>
+<% } %>
+
 <!-- Include Footer -->
 <% include footer.ejs %>
